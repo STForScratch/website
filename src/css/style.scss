@@ -1,0 +1,68 @@
+$orange: #ff9f00;
+$white: #fff;
+$black: #000;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    color: $black;
+    background-color: $white;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    box-sizing: content-box;
+}
+
+section {
+    background-color: $white;
+    color: $black;
+    text-align: center;
+    margin: 0;
+    padding: 2em 4em;
+    padding: clamp(2em 4em, 60vw, 4em 8em);
+}
+
+section.main {
+    background-color: $orange;
+    color: $white;
+}
+
+section.header {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+div.three-col {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em 0;
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div {
+        width: 33%;
+        font-size: 24px;
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

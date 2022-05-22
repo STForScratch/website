@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  color: #000;
+  background-color: #fff;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+section {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  margin: 0;
+  padding: 2em 4em;
+  padding: clamp(2em 4em, 60vw, 4em 8em);
+}
+
+section.main {
+  background-color: #ff9f00;
+  color: #fff;
+}
+
+section.header {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.three-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+  margin: 2em 0;
+}
+
+@media (max-width: 600px) {
+  div.three-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+div.three-col div {
+  width: 33%;
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  div.three-col div {
+    width: 100%;
+  }
+}
+
+div.three-col div img {
+  width: 100%;
+}
