@@ -1,0 +1,2 @@
+# Sass thing
+if you want to know why if you change the .sass file the css doesnt do anything its because the person that overhauled the site ([KazookiTV](https://github.com/KazookiTV)) used the Live Sass Compiler by Ritwick Dey in vscode.
